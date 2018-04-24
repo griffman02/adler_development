@@ -1,0 +1,104 @@
+﻿capital = 218
+
+OOB = "DON_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+
+	parties = {
+		vanguardism = { 
+			popularity = 0
+		}
+		collectivism = {
+		    popularity = 0
+		}
+		socialism = {
+		    popularity = 4
+		}
+		social_democracy = {
+		    popularity = 20
+		}
+		social_liberalism = {
+		    popularity = 7
+		}
+		liberalism = {
+		    popularity = 10
+		}
+		conservatism = {
+		    popularity = 0
+		}
+		authoritarianism = {
+		    popularity = 53
+		}
+		despotism = {
+		    popularity = 0
+		}
+		nationalism = {
+		    popularity = 6
+		}
+		folkism = {
+		    popularity = 0
+		}
+	}
+	
+	ruling_party = authoritarianism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_faction = white_movement
+add_to_faction = DON
+add_to_faction = MOU
+add_to_faction = KUB
+add_to_faction = KAZ
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = MOU
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.50
+	}
+	set_autonomy = {
+		target = KUB
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.50
+	}
+	
+	else = {
+		puppet = MOU
+		puppet = KUB
+	}
+}
+
+set_convoys = 5
+
+create_country_leader = {
+	name = "Pyotr Wrangel"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Don_Pyotr_Wrangel.dds"
+	expire = "1965.1.1"
+	ideology = authoritarianism
+	traits = {
+	}
+}
+
+create_field_marshal = {
+	name = "Pyotr Krasnov"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+

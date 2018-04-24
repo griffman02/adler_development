@@ -1,0 +1,22 @@
+state={
+	id=762
+	name="STATE_762"
+	manpower = 2550840
+
+	state_category = metropolis
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 1
+		}
+		add_core_of = GER
+	}
+
+	provinces={
+		529 3512 6469 6570 9482 
+	}
+	manpower=2550840
+	buildings_max_level_factor=1.000
+}

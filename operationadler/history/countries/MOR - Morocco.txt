@@ -1,0 +1,95 @@
+﻿capital = 461
+
+OOB = "MOR_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+
+	parties = {
+		vanguardism = { 
+			popularity = 4
+		}
+		collectivism = {
+		    popularity = 0
+		}
+		socialism = {
+		    popularity = 0
+		}
+		social_democracy = {
+		    popularity = 0
+		}
+		social_liberalism = {
+		    popularity = 28
+		}
+		liberalism = {
+		    popularity = 0
+		}
+		conservatism = {
+		    popularity = 0
+		}
+		authoritarianism = {
+		    popularity = 45
+		}
+		despotism = {
+		    popularity = 0
+		}
+		nationalism = {
+		    popularity = 16
+		}
+		folkism = {
+		    popularity = 7
+		}
+	}
+	
+	ruling_party = authoritarianism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 5
+
+
+create_country_leader = {
+	name = "Abd el-Krim"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Morocco_Abd_el_Krim.dds"
+	ideology = social_liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Mohammed V Alaouite"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Morocco_Mohammed_V.dds"
+	ideology = authoritarianism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Allal al-Fassi"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Morocco_Allal_al_Fassi.dds"
+	ideology = nationalism
+	traits = {
+	}
+}
+
+#create_field_marshal = {
+#	name = "Xhemal Aranitasi"
+#	portrait_path = "gfx/leaders/Europe/
+#Portrait_Europe_Generic_land_3.dds"
+#	traits = { }
+#	attack_skill = 1
+#    defense_skill = 3
+#    planning_skill = 2
+#    logistics_skill = 1
+#}
+
